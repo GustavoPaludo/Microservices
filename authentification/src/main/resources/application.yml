@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: authentification-service
+server:
+  port: 8180

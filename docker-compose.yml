@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  db1:
+    image: mysql:latest
+    container_name: authentication-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: authentication
+      MYSQL_USER: master
+      MYSQL_PASSWORD: master
+    ports:
+      - "3306:3306"
+
+  db2:
+    image: mysql:latest
+    container_name: client-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: client
+      MYSQL_USER: master
+      MYSQL_PASSWORD: master
+    ports:
+      - "3307:3306"
+
+  db3:
+    image: mysql:latest
+    container_name: product-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: product
+      MYSQL_USER: master
+      MYSQL_PASSWORD: master
+    ports:
+      - "3308:3306"

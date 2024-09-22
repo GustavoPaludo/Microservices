@@ -6,10 +6,11 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.service.product.ApplicationConstants;
 import com.service.product.utils.CallService;
 
 @RestController
-public class ProductService {
+public class ProductController {
 
 	@Autowired
 	private DiscoveryClient discoveryClient;
@@ -17,10 +18,10 @@ public class ProductService {
 	@Autowired
 	private CallService callService;
 
-	@GetMapping("helloEureka")
-	public String helloWorld() {
-		ServiceInstance serviceInstance = this.discoveryClient.getInstances("client-service").get(0);
-		String serviceResponse = this.callService.getForObject(serviceInstance.getUri(), "/helloWorld", String.class);
+	@GetMapping("/get-product")
+	public String getProduct() {
+		ServiceInstance serviceInstance = this.discoveryClient.getInstances(ApplicationConstants.CLIENT_SERVICE).get(0);
+		String serviceResponse = this.callService.getForObject(serviceInstance.getUri(), ApplicationConstants.CLIENT_SERVICE_GET_CLIENT, String.class);
 		return serviceResponse;
 	}
 }

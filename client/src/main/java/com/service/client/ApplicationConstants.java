@@ -1,0 +1,21 @@
+package com.service.client;
+
+public class ApplicationConstants {
+
+	public static final String CACHE_ONE_MINUTES = "one_minute_cache";
+	public static final String CACHE_FIVE_MINUTES = "five_minute_cache";
+	public static final String CACHE_THIRTY_MINUTES = "thirty_minute_cache";
+
+	//Service definitions
+	public static final String AUTHENTICATION_SERVICE = "authentication-service";
+	public static final String PRODUCT_SERVICE = "product-service";
+
+	//Client Service End-point mapping
+	public static final String CLIENT_SERVICE_GET_CLIENT = "/get-client";
+
+	//Product Service End-point mapping
+	public static final String PRODUCT_SERVICE_GET_PRODUCT = "/get-product";
+
+	//JWT Secret Key
+	public static final String JWT_KEY = "eyJhbGciOiJIUzUxMiJ9ew0KICAic3ViIjogIjk5NzE2NjQwNSIsDQogICJuYW1lIjogIkd1c3Rhdm8gUGFsdWRvIiwNCiAgImlhdCI6IDI2MTMxMDExDQp99Ggxf9KrMIm7hNrtPe0gBVicls0nqBekHivlLyGdMxtilRV3mul5uev5Zb4sp3SIVYy6lkChHHJkeKCbjgeyJhbGciOiJIUzUxMiJ9ew0KICAic3ViIjogIjk5NzE2NjQwNSIsDQogICJuYW1lIjogIkd1c3Rhdm8gUGFsdWRvIiwNCiAgImlhdCI6IDI2MTMxMDExDQp99Ggxf9KrMIm7hNrtPe0gBVicls0nqBekHivlLyGdMxtilRV3mul5uev5Zb4sp3SIVYy6lkChHHJkeKCbjgeyJhbGciOiJIUzUxMiJ9ew0KICAic3ViIjogIjk5NzE2NjQwNSIsDQogICJuYW1lIjogIkd1c3Rhdm8gUGFsdWRvIiwNCiAgImlhdCI6IDI2MTMxMDExDQp99Ggxf9KrMIm7hNrtPe0gBVicls0nqBekHivlLyGdMxtilRV3mul5uev5Zb4sp3SIVYy6lkChHHJkeKCbjgeyJhbGciOiJIUzUxMiJ9ew0KICAic3ViIjogIjk5NzE2NjQwNSIsDQogICJuYW1lIjogIkd1c3Rhdm8gUGFsdWRvIiwNCiAgImlhdCI6IDI2MTMxMDExDQp99Ggxf9KrMIm7hNrtPe0gBVicls0nqBekHivlLyGdMxtilRV3mul5uev5Zb4sp3SIVYy6lkChHHJkeKCbjg";
+}

@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ClientService {
+public class ClientController {
 
-	@GetMapping("/helloWorld")
-	public String helloWorld() {
-		return "Hello World from Client Service";
+	@GetMapping("/get-client")
+	public String getClient() {
+		return "Client String";
 	}
 }

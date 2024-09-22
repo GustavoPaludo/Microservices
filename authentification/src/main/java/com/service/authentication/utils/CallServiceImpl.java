@@ -1,4 +1,4 @@
-package com.service.product.utils;
+package com.service.authentication.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClient.ResponseSpec;
 
-import com.service.product.ApplicationConstants;
+import com.service.authentication.ApplicationConstants;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
